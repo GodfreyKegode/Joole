@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "Product Summary";
+    // Layout = null;
+}
+
+<div class="panel panel-body">
+
+    <div class="col-md-3">
+
+        <div class="panel panel-default">
+
+            <div class="panel-heading">
+                <h5>
+                    Search:
+                    <input type="button" style="margin:8px" value="Save" class="btn btn-sm btn-primary" id="btnSave" />
+                    <input type="button" style="margin:8px" value="Compare" class="btn btn-sm btn-primary" id="btnCompare" />
+                </h5>
+                
+            </div>
+            <div class="panel-heading">
+                <h5>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Product" class="btn btn-sm btn-primary" id="btnProduct" onclick="location.href='@Url.Action("GetAllProducts", "ProductController")'" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="button" value="Project" class="btn btn-sm btn-primary" id="btnProject" />
+
+                </h5>
+
+            </div>
+            <div class="panel-heading">
+                <h5>Product Type</h5>
+
+            </div>
+            <div class="panel-heading">
+                <h5>Model Year</h5>
+
+            </div>
+            <div class="panel-heading">
+                <h5>Technical Specification</h5>
+
+            </div>
+            <div class="panel-body">
+                <div class="slidecontainer">                    
+                    <p><span style='font-size:20px;'>&#8645;</span> &nbsp;&nbsp;Airflow (CFM):</p>
+                    <input type="range" min="1" max="100" value="50"><br>
+                    <p><span style='font-size:20px;'>&#8645;</span> &nbsp;&nbsp;Max Power (W):</p>
+                    <input type="range" min="1" max="100" value="50"><br>
+                    <p><span style='font-size:20px;'>&#8645;</span> &nbsp;Sound at max speed (dBA):</p>
+                    <input type="range" min="1" max="100" value="50"><br>
+                    <p><span style='font-size:20px;'>&#8645;</span> &nbsp;Fan sweep diameter (in):</p>
+                    <input type="range" min="1" max="100" value="50">
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-md-9">
+        <!--//<img src=""/>
+        <img src=""/>-->
+
+    </div>
+
+</div>
